@@ -1,0 +1,12 @@
+{
+    "device":{
+        "id":"19021999",
+        "name": "ESP32-Cam",
+        "firmware": "GIoT"
+    },
+    "firmware":{
+        "version": "0.1"
+         
+    }
+
+}
