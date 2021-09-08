@@ -27,3 +27,16 @@ sta_if.connect(ssid_, wp2_pass)
 print(sta_if.isconnected())
 
 
+
+def getFirmware():
+    source = 'https://my-json-server.typicode.com/KhangHoang12/GIoT-Firmware/firmware'
+    response = requests.get(source)
+    firmware = json.loads(response.text)
+    firmware = str(firmware['source'])
+
+    scriptFile = open("script","w")
+    scriptFile.write(firmware)
+    scriptFile.close()
+    
+
+
