@@ -29,8 +29,8 @@ print(sta_if.isconnected())
 
 
 def getFirmware():
-    source = 'https://my-json-server.typicode.com/KhangHoang12/GIoT-Firmware/firmware'
-    response = requests.get(source)
+    url = 'https://my-json-server.typicode.com/KhangHoang12/GIoT-Firmware/firmware'
+    response = requests.get(url)
     firmware = json.loads(response.text)
     firmware = str(firmware['source'])
     scriptFile = open("script.py","w")
@@ -38,11 +38,11 @@ def getFirmware():
     scriptFile.close()
 
     f = open("script.py","r")
-    k = f.read()
+    sourcecode = f.read()
     print('Firmware downloaded succesfully')
-    print(k)
+    print(sourcecode)
+    return sourcecode 
 
 
-       
 
 

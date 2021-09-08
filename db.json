@@ -7,7 +7,7 @@
     
     "firmware":{
         "version": "0.1",
-        "source": "while True:\n digital.pin(2,1)\n time.sleep(1)\n digital.pin(2,0)\n time.sleep(1)\n"
+        "source": "while True:\n digital.pin(3,1)\n time.sleep(1)\n digital.pin(3,0)\n time.sleep(1)\n"
     }
 
 }
