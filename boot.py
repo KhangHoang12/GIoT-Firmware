@@ -33,10 +33,16 @@ def getFirmware():
     response = requests.get(source)
     firmware = json.loads(response.text)
     firmware = str(firmware['source'])
-
-    scriptFile = open("script","w")
+    scriptFile = open("script.py","w")
     scriptFile.write(firmware)
     scriptFile.close()
-    
+
+    f = open("script.py","r")
+    k = f.read()
+    print('Firmware downloaded succesfully')
+    print(k)
+
+
+       
 
 
