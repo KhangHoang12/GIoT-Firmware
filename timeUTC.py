@@ -1,12 +1,6 @@
 
-
-
-def getSource():
-    url = 'https://my-json-server.typicode.com/KhangHoang12/GIoT-Firmware/firmware'
-    response = requests.get(url)
-    data = json.loads(response.text)
-    exec(data['source'])
-
+import urequests as requests
+import ujson as json
 
 def getTime():
     url = 'http://worldtimeapi.org/api/timezone/Asia/Ho_Chi_Minh'
@@ -20,5 +14,5 @@ def getTime():
     time['hour'] = datetime[11:13]
     time['minute'] = datetime[14:16]
     time['second'] = datetime[17:19]
-    month = time[5:7]
+    
     return time

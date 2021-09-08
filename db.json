@@ -7,7 +7,7 @@
     
     "firmware":{
         "version": "0.1",
-        "source" : "while True:\n	temperature, humidity = aht20.read()\n	oled.fill(0)\n	oled.show()\n	oled.text("nhiet do la "+ str(temperature), 0 ,0)\n	oled.text("do am la "+ str(humidity), 0 ,10)\n	oled.show()\n	time.sleep(5)\n"
+        "source": "while True:\n    temperature, humidity = aht20.read()\n  oled.fill(0)\n  oled.show()\n   oled.text('nhiet do la '+ str(temperature), 0 ,0)\n oled.text('do am la '+ str(humidity), 0 ,10)\n  oled.show()\n time.sleep(5)\n "
     }
 
 }

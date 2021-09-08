@@ -3,6 +3,7 @@ import urequests as requests
 import gc
 
 import time
+import timeUTC
 import digital
 import ssd1306
 import aht20 
@@ -12,6 +13,7 @@ i2c = SoftI2C(scl=Pin(0), sda=Pin(16))
 digital = digital.DIGITAL(i2c, 32)
 oled = ssd1306.SSD1306_I2C(128, 64, i2c)
 aht20 = aht20.AHT20
+UTC = timeUTC
 
 
 ssid_ = 'Khang Hoang'
