@@ -7,7 +7,7 @@
     
     "firmware":{
         "version": "0.2",
-        "source": "while True:\n\ttry:\n\t\tt = UTC.getTime()\n\texcept Exception as e:\n\t\tprint(e)\n        requests.Response.close\n\t\tgc.collect()\n\t\tsta_if.disconnect()\n\t\ttime.sleep(1)\n\t\tsta_if.connect(ssid_, wp2_pass)\n\t\tpass\n\telse:\n\t\toled.fill(0)\n\t\toled.show()\n\t\toled.text('Gio:  '+ t['hour'], 0 ,0)\n\t\toled.text('Phut:  '+ t['minute'], 0 ,10)\n\t\toled.text('Giay:  '+ t['second'], 0 ,20)\n\t\toled.show()\n\ttime.sleep(5)"
+        "source": "while True:\n\ttry:\n\t\tt = UTC.getTime()\n\texcept Exception as e:\n\t\tprint(e)\n\t\requests.Response.close\n\t\tgc.collect()\n\t\tsta_if.disconnect()\n\t\ttime.sleep(1)\n\t\tsta_if.connect(ssid_, wp2_pass)\n\t\tpass\n\telse:\n\t\toled.fill(0)\n\t\toled.show()\n\t\toled.text('Gio:  '+ t['hour'], 0 ,0)\n\t\toled.text('Phut:  '+ t['minute'], 0 ,10)\n\t\toled.text('Giay:  '+ t['second'], 0 ,20)\n\t\toled.show()\n\ttime.sleep(5)"
     }
 
 }
