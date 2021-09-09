@@ -41,7 +41,14 @@ def getFirmware():
     sourcecode = f.read()
     print('Firmware downloaded succesfully')
     print(sourcecode)
-    return sourcecode 
+    return sourcecode
+
+def getSource():
+    url = 'https://my-json-server.typicode.com/KhangHoang12/GIoT-Firmware/firmware'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    code = data['source']
+    exec(data['source']) 
 
 
 
