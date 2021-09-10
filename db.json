@@ -6,8 +6,8 @@
     },
     
     "firmware":{
-        "version": "0.4",
-        "source": "while True:\n digital.pin(3,1)\n time.sleep(1)\n digital.pin(3,0)\n time.sleep(1)\n"
+        "version": "0.5",
+        "source": "while True:\n digital.pin(5,1)\n time.sleep(1)\n digital.pin(5,0)\n time.sleep(1)\n"
     }
 
 }

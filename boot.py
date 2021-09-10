@@ -76,6 +76,12 @@ def getCode():
             f.close()
             break
 
+def runScript():
+    f = open("script.py", "r")
+    script = f.read()
+    f.close()
+    exec(script)
+
 flash()
 resetDigitalPins()
 
@@ -92,6 +98,7 @@ if not sta_if.isconnected():
 print('network config:', sta_if.ifconfig())    
 
 getCode()
+runScript()
 
 
   
