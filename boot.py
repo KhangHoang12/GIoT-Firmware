@@ -16,7 +16,8 @@ aht20 = aht20.AHT20
 UTC = timeUTC
 
 import network
-
+ssid = 'Khang Hoang'
+wp2_pass = 'khangthinh'
 
 def resetDigitalPins():
     for i in range(8):
@@ -63,7 +64,7 @@ def getCode():
             gc.collect()
             sta_if.disconnect()
             time.sleep(0.5)
-            sta_if.connect('Khang Hoang', 'khangthinh')
+            sta_if.connect(ssid, wp2_pass)
             print('network status: '+ str(sta_if.isconnected()))
             pass
         else:
@@ -85,8 +86,7 @@ def runScript():
 flash()
 resetDigitalPins()
 
-ssid = 'Khang Hoang'
-wp2_pass = 'khangthinh'
+
 
 sta_if = network.WLAN(network.STA_IF)
 if not sta_if.isconnected():
